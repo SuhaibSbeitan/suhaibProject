@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center pt-5">
+      <div class="card w-75">
+        <h5 class="card-header" >Create New User</h5>
+        <div class="card-body">
+          <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" formControlName="name" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" formControlName="city" id="city" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" formControlName="phone" id="phone" />
+            </div>
+            <div class="mb-3">
+              <label for="userName" class="form-label">Username</label>
+              <input type="text" class="form-control" formControlName="userName" id="userName" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password" id="password" />
+            </div>
+          </form>
+          <div class="card-footer">
+            <button class="btn btn-primary me-2" (click)="save()">Save</button>
+            <a [routerLink]="['/']" class="btn btn-success">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

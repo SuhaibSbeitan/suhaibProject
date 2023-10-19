@@ -1,0 +1,10 @@
+<div class="input-group mt-2 mb-2">
+    <span class="input-group-text">Search</span>
+    <input type="text" class="form-control" [(ngModel)]="listFilter" #inputValue />
+  </div>
+
+  <div class="row mt-2 mb-2" *ngIf="inputValue.value !== ''">
+    <div class="col">
+      {{ message }}
+    </div>
+  </div>
