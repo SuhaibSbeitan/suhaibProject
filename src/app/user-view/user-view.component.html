@@ -1,17 +1,25 @@
 <div class="container">
   <div class="row justify-content-center align-items-center pt-5">
-    <div class="card w-50 shadow">
-      <h5 class="card-header text-center">User Details</h5>
-      <div class="d-flex justify-content-center">
-        <img class="card-img-top w-50 h-50" src="https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg" />
-      </div>
-      <div class="card-body text-center">
-        <h4 class="card-title">{{ user.name }}</h4>
-        <p class="card-text">Major: {{ user.major }}</p>
-        <p class="card-text">Phone: {{ user.phone }}</p>
-        <p class="card-text">Username: {{ user.userName }}</p>
-        <p class="card-text">Password: {{ user.password }}</p>
-        <a [routerLink]="['/list']" class="btn btn-primary">Go Back</a>
+    <div class="card w-75 shadow">
+      <h5 class="card-header text-center py-3">User Details</h5>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top w-75 h-75" src="https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="text-center">
+              <h4 class="card-title">{{ user.name }}</h4>
+              <p class="card-text">Major: {{ user.major }}</p>
+              <p class="card-text">Phone: {{ user.phone }}</p>
+              <p class="card-text">Username: {{ user.userName }}</p>
+              <p class="card-text">Password: {{ user.password }}</p>
+              <a [routerLink]="['/list']" class="btn btn-primary">Go Back</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
